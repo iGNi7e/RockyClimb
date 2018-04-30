@@ -7,16 +7,17 @@ using UnityEngine.UI;
 public class RightHandDetector : MonoBehaviour {
 
     public Text coinText; //префаб текста для количества собранных монет
-    public GameObject crack; //Префаб трещин под камнем
 
-    public static bool isRockedRightHand; //переменная для определения нахождения ладони на камне
+    public Vector3 PosTinyRight;  //позиция камня на котором держится кисть
+
+    public bool isRockedRightHand; //переменная для определения нахождения ладони на камне
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Rock")
         {
             isRockedRightHand = true;
-            StartCoroutine(DrawCrack(collision));
+            PosTinyRight = collision.transform.position;
         }
         if (collision.gameObject.tag == "Coin")
         {
@@ -41,15 +42,6 @@ public class RightHandDetector : MonoBehaviour {
             scoreCoin++;
             coinText.text = scoreCoin.ToString(); //изменение текста количества собранных монет
             Destroy(collision.gameObject); //Уничтожение собранной монеты
-        }
-    }
-
-    IEnumerator DrawCrack(Collider2D collision) //Метод для добавления трещин
-    {
-        yield return new WaitForSeconds(0.3f); //Задержка
-        if (!FindObjectOfType<PlayerController>().direction) //проверка на смену направления
-        {
-            Instantiate(crack,collision.transform.position,Quaternion.identity); //Добавление трещин
         }
     }
 }

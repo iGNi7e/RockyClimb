@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour {
 
     private Vector3 currentVelocity;
 
-    PlayerController playerController; //экземпляр класса PlayerController
+    PlayerController playerController;
 
     Vector3 newPos; //координаты для нового положения камеры
 

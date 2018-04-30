@@ -386,18 +386,6 @@ Prefab:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 952860882}
-    - target: {fileID: 114825867019482054, guid: 880d5767a377cd144968a40b393e6db8,
-        type: 2}
-      propertyPath: crack
-      value: 
-      objectReference: {fileID: 1980146504766912, guid: 9c38bcf89dce5db4a894660a002138e4,
-        type: 2}
-    - target: {fileID: 114980599631910056, guid: 880d5767a377cd144968a40b393e6db8,
-        type: 2}
-      propertyPath: crack
-      value: 
-      objectReference: {fileID: 1980146504766912, guid: 9c38bcf89dce5db4a894660a002138e4,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 880d5767a377cd144968a40b393e6db8, type: 2}
   m_IsPrefabParent: 0
@@ -434,6 +422,7 @@ MonoBehaviour:
   - {fileID: 1315359846949514, guid: 7ddb7aaaa59e4ea449517107f6eced2b, type: 2}
   rightHand: {fileID: 1802313770}
   coinPrefab: {fileID: 1034260225179236, guid: f4c57d45f01f8094c8cb6b64717d04f1, type: 2}
+  crack: {fileID: 1980146504766912, guid: 9c38bcf89dce5db4a894660a002138e4, type: 2}
 --- !u!4 &328433813
 Transform:
   m_ObjectHideFlags: 0

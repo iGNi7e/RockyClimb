@@ -318,7 +318,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -389,7 +389,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinText: {fileID: 0}
-  crack: {fileID: 0}
+  PosTinyLeft: {x: 0, y: 0, z: 0}
+  isRockedLeftHand: 0
 --- !u!114 &114975894331951154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -404,6 +405,7 @@ MonoBehaviour:
   leftHand: {fileID: 4902047350008534}
   rightHand: {fileID: 4814947372703038}
   scoreText: {fileID: 0}
+  crack: {fileID: 1980146504766912, guid: 9c38bcf89dce5db4a894660a002138e4, type: 2}
   speed: 2
   direction: 0
   nextTime: 0
@@ -419,7 +421,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinText: {fileID: 0}
-  crack: {fileID: 0}
+  PosTinyRight: {x: 0, y: 0, z: 0}
+  isRockedRightHand: 0
 --- !u!212 &212208686950309056
 SpriteRenderer:
   m_ObjectHideFlags: 1
